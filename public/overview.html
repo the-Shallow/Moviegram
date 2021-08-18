@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/public/css/style.css">
+
+  <title>Moviegram</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="flex-nav">
+        <div class="logo-title">
+          <h1>Moviegram</h1>
+        </div>
+        <div class="formbox">
+          <form id="form--movie">
+            <!-- <label for="movie">Enter the movie Name</label> -->
+            <input type="text" name="movie" id="movie" placeholder="Search" />
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="movie-card-list">
+        <!-- Card 1: Blade Runner -->
+        <div class="movie-card" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNDc4MThhN2EtZjMzNC00ZDJmLThiZTgtNThlY2UxZWMzNjdkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg');">
+          <div class="color-overlay">
+            <div class="movie-share">
+              <a class="movie-share__icon" href="#">
+                <i class="material-icons">&#xe87d</i>
+              </a>
+              <a class="movie-share__icon" href="#">
+                <i class="material-icons">&#xe253</i>
+              </a>
+              <a class="movie-share__icon" href="#">
+                <i class="material-icons">&#xe80d</i>
+              </a>
+            </div>
+            <div class="movie-content">
+              <div class="movie-header">
+                <a href="/movie/Blade+Runner"><h1 class="movie-title">Blade Runner</h1></a>
+                <h4 class="movie-info">(1982) Sci-Fi, Thriller</h4>
+              </div>
+              <p class="movie-desc">A blade runner must pursue and try to terminate four replicants who stole a ship in
+                space and have returned to Earth to find their creator.
+              </p>
+            </div>
+          </div>
+        </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
