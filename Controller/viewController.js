@@ -24,7 +24,6 @@ exports.getMovieInfo = async (req, res, next) => {
     `http://www.omdbapi.com/?t=${req.params.title}&apikey=27d5f8f7`
   );
 
-  
   const movies = await result.json();
   // console.log(movies);
   res.status(200).render("movie", {

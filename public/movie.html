@@ -47,6 +47,8 @@
         }
         .card_right img {
           height: 390px;
+          margin: 10px;
+          margin-top: 30%;
           border-radius: 2px;
         }
         .card_right {
@@ -55,9 +57,11 @@
 
         .card_cat {
           width: 100%;
+          margin-bottom: 5px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
+          flex-wrap: wrap;
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
         }
@@ -163,6 +167,21 @@
         .card-rats {
           margin-right: 30px;
         }
+
+        .card_image {
+          display: none;
+        }
+
+        @media (max-width: 900px) {
+          .card_image {
+            text-align: center;
+            display: block;
+          }
+
+          .card_right {
+            display: none;
+          }
+        }
     </style>
   </head>
   
@@ -172,6 +191,11 @@
 	<div class="main_card">
 		<div class="card_left">
 			<div class="card_datails">
+        <div class="card_image">
+			    <div class="img_container">
+				    <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg" alt="">
+			    </div>
+		    </div>
 				<h1>The Dark Knight</h1>
 				<div class="card_cat">
 					<p class="PG">PG - 13</p>
@@ -207,11 +231,10 @@
 			    </div>	
 			  </div>
 
-        <div class="card_cat">
-          
+        <div class="card_cat card_flex">
+    
           <div class="card-rats">
             <h2>Metacritic</h2>
-
             <div class="social-btn">
 				    <!--USERS RATINGS-->
 				      <button>
@@ -222,7 +245,6 @@
           
            <div class="card-rats">
               <h2>Rotten Tomatoes</h2>
-
               <div class="social-btn">
 				      <!--USERS RATINGS-->
 				        <button>
@@ -233,7 +255,6 @@
 
             <div class="card-rats">
               <h2>IMDB</h2>
-
               <div class="social-btn">
 				      <!--USERS RATINGS-->
 				        <button>
@@ -241,8 +262,6 @@
 				        </button>
 			         </div>
             </div>
-          
-          
 			</div>
     </div>
   </div>
@@ -253,10 +272,10 @@
 		<div class="card_right">
 			<div class="img_container">
 				<img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg" alt="">
-				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
   </body>
 </html>
